@@ -1,0 +1,64 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main container for product listings */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual product card styling */
+.product-card {
+    border: 1px solid #ddd;
+    width: 200px; /* Increased width */
+    height: auto; /* Auto height based on content */
+    float: left; /* Retained float for now, but flexbox from container is better */
+    margin: 15px; /* Increased margin */
+    border-radius: 10px; /* Softer border radius */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center; /* Center text content */
+    padding: 15px; /* Add padding inside the card */
+}
+
+.product-card img {
+    width: 100%; /* Make image responsive within the card */
+    max-width: 150px; /* Max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 160px; /* Max height for image */
+    display: block;
+    margin: 0 auto 10px auto; /* Center image and add bottom margin */
+    transition: transform 0.5s ease; /* Smoother transition */
+}
+
+.product-card img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    /* Removed rotate for a cleaner look, can be added back if preferred */
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-price {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* General page title (if any) */
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+} 
